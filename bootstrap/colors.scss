@@ -1,0 +1,7 @@
+// custom.scss
+$theme-colors: (
+    "dark": #1a1a2e,  // Your new dark color
+    "primary": #030e33, // Example custom primary color
+);
+
+@import "bootstrap";
