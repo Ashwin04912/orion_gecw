@@ -10,8 +10,9 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script> -->
 
 <!-- Page Content -->
+
 <div class="container pt-5">
-    <h1 class="fw-bold pt-5">Photo/Gallery</h1>
+    <h1 class="fw-bold pt-5" style="font-family: 'Beasigne', sans-serif; color: white;";>Gallery</h1>
   
     <hr>
 
