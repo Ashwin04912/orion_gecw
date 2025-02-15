@@ -1,29 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/heroes/hero-5/assets/css/hero-5.css">
     <link rel="stylesheet" href="{{ asset('assets/css/navigation.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/execom.css') }}">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/heroes/hero-5/assets/css/hero-5.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
-    <title>ieeesbgecw</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <title>orion_gecw</title>
 </head>
 
 <body data-route-name="{{ Route::currentRouteName() }}">
 
     <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
         <div class="container-fluid ScrollCss" id="ScrollJq">
-            <a class="navbar-brand" href="{{ route('home') }}">
-                <img src="{{ asset('assets/images/sb_logo.png') }}" alt="Logo" width="100" height="100"
-                    class="d-inline-block align-text-top">
+            <a class="navbar-brand d-flex align-items-center" href="{{ route('home') }}">
+                <img src="{{ asset('assets/images/logo.jpeg') }}" alt="Logo" width="75" height="100"
+                    class="d-inline-block">
+                <h2 class="ms-3 mt-2" style="font-family: Beasigne; color:white;">ORION</h2>
             </a>
+
             <button class="navbar-toggler m-4" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span>
@@ -72,7 +70,7 @@
                             <a class="nav-link text-light" onclick="$('.about_us')[0].focus()" href="#">About
                                 Us</a>
                         </li> -->
-                        <li class="nav-item dropdown">
+                        <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-light d-flex align-items-center {{ in_array(Route::currentRouteName(), ['computer.index', 'wie.index', 'aps.index', 'mtts.index', 'sight.index']) ? 'selected' : '' }}"
                                 href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false">
                                 <span class="name">Societies</span>
@@ -84,7 +82,7 @@
                                 <li><a class="dropdown-item {{ Route::currentRouteName() == 'mtts.index' ? 'selected' : '' }}" href="{{route('mtts.index')}}">Microwave Theory and Technology Society</a></li>
                                 <li><a class="dropdown-item {{ Route::currentRouteName() == 'sight.index' ? 'selected' : '' }}" href="{{route('sight.index')}}">Sight</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                         <li class="nav-item {{ Route::currentRouteName() == 'events.index' ? 'selected' : '' }}">
                             <a class="nav-link text-light" href="{{ route('events.index') }}"><span class="name">Events</span></a>
                         </li>
@@ -122,9 +120,3 @@
     <script src="{{asset('assets/js/navigation.js')}}"></script>
 
 </body>
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-
-</html>
-<!-- hi  -->
