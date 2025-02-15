@@ -7,7 +7,10 @@
                     <i class="bi bi-info-circle-fill me-2"></i>About Us
                 </h4>
                 <p style="font-size: 16px; font-weight: 400; line-height: 1.6; text-align: justify; letter-spacing: 0.8px; margin: 0;">
-    IEEE Student Branch GEC Wayanad is committed to excellence, focusing on achievements, regional opportunities, and innovative programs. We foster collaboration and innovation in technical fields, connecting and inspiring the tech community.
+                    The purpose of ORION GECW is to foster interest, knowledge, and participation in
+                    space exploration and related fields among the students of Government Engineering
+                    College Wayanad. The club aims to provide a platform for educational activities,
+                    events, projects, and discussions related to space science and technology.
                 </p>
             </div>
 
@@ -40,19 +43,18 @@
         <hr class="bg-light mt-4">
         <div class="row">
             <div class="d-flex flex-column align-items-center">
-            <p class="m-0 fs-6 text-white">Made with <i class="bi bi-suit-heart-fill text-white"></i> by Ashwin</p>
-                <p class="m-0 fs-6 text-white">&copy; {{ date('Y') }} IEEE SB GEC Wayanad. All rights reserved.</p>
-                
-                <!-- <p class="m-0 fs-6 text-white">&copy; {{ date('Y') }} Ashwin. All rights reserved.</p> -->
+                <p class="m-0 fs-6 text-white">
+                    Made with <i class="bi bi-suit-heart-fill text-white"></i> by <strong>Ashwin & Jithin</strong>
+                </p>
+                <p class="m-0 fs-6 text-white">&copy; {{ date('Y') }} ORION GEC Wayanad. All rights reserved.</p>
             </div>
         </div>
     </div>
 </footer>
 
-
 <style>
     footer {
-        font-size: 16px;
+        font-size: 12px;
         line-height: 1.8;
     }
 
@@ -62,7 +64,7 @@
 
     footer .bi {
         font-size: 20px;
-        color: #007bff;
+        color: rgb(255, 0, 0);
     }
 
     footer a:hover {
@@ -81,7 +83,6 @@
     /* Heart icon styling */
     .bi-suit-heart-fill {
         color: white;
-        /* Set color of the heart */
         animation: heart-beat 1.5s infinite;
     }
 
