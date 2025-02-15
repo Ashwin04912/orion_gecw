@@ -1,15 +1,16 @@
 @extends('layouts.app')
 @section('content')
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- Background Image Section -->
-<x-background_home_image image="assets/images/dummy-bg.jpg">
+<x-background_home_image image="assets/images/blackhole.gif">
     <div class="container">
         <div class="row justify-content-md-center align-items-center">
             <div class="col-12 col-md-11 col-lg-9 col-xl-8 col-xxl-7 text-center">
-                <h2 class="display-1 text-white fw-bold mb-4" style="font-family: 'Poppins', sans-serif; animation: fadeInUp 1s ease;">
-                    Dream of Success
+                <h2 class="display-1 text-white fw-bold mb-4" style="font-family: 'Beasigne', sans-serif; animation: fadeInUp 1s ease;">
+                    Aim High Fly High
                 </h2>
-                <p class="lead text-white mb-5 d-flex justify-content-sm-center" style="font-size: 1.1rem; animation: fadeInUp 1.2s ease;">
+                <p class="lead text-white mb-5 d-flex justify-content-sm-center" style="font-family: 'Nerd-font'; font-size: 1.1rem; animation: fadeInUp 1.2s ease;">
                     <span class="col-12 col-sm-10 col-md-8 col-xxl-7">
                         There are three ways to ultimate success: The first way is to be kind. The second way is to be kind. The third way is to be kind.
                     </span>
@@ -24,32 +25,19 @@
 
 <div class="container mt-5 d-flex flex-wrap justify-content-center gap-4">
     <!-- Mission Box -->
-    <div class="mission-box p-4 shadow-lg rounded-3 col-12 col-md-5" style="background: #f9f9f9; transition: transform 0.3s ease; width: 100%; max-width: 600px;" data-aos="fade-up" data-aos-delay="100">
-        <div class="text-center mb-4">
-            <i class="fas fa-bullhorn fa-3x text-primary" style="animation: fadeInUp 1s ease;"></i>
-        </div>
-        <h2 class="text-center text-dark" style="font-size: 1.8rem; font-weight: bold; letter-spacing: 1px; animation: fadeInUp 1s ease;">
-            Our Mission
-        </h2>
-        <p class="text-dark text-center" style="line-height: 1.8; font-size: 1.1rem; animation: fadeInUp 1.2s ease;">
-            Our mission is to create a collaborative platform that empowers students to innovate and build meaningful connections with peers, faculty, and industry leaders.
+    <div class="mv_container container mission-box col-12 col-md-5" data-aos="fade-up">
+        <h2 class="title pumpkin">>OUR MISSION</h2>
+        <p class="text" style="font-family: 'Nerd-font';">
+            To push the boundaries of human knowledge, inspire the next generation of space pioneers, and explore the infinite cosmos through innovation and collaboration.
         </p>
     </div>
-
     <!-- Vision Box -->
-    <div class="vision-box p-4 shadow-lg rounded-3 col-12 col-md-5" style="background: #f9f9f9; transition: transform 0.3s ease; width: 100%; max-width: 600px;" data-aos="fade-up" data-aos-delay="200">
-        <div class="text-center mb-4">
-            <i class="fas fa-eye fa-3x text-primary" style="animation: fadeInUp 1s ease;"></i>
-        </div>
-        <h2 class="text-center text-dark" style="font-size: 1.8rem; font-weight: bold; letter-spacing: 1px; animation: fadeInUp 1s ease;">
-            Our Vision
-        </h2>
-        <p class="text-dark text-center" style="line-height: 1.8; font-size: 1.1rem;animation: fadeInUp 1.2s ease;">
-            Our vision is to inspire innovation and leadership by fostering a culture of creativity and collaboration, driving positive change in society.
+    <div class="mv_container container vision-box col-12 col-md-5" data-aos="fade-up">
+        <h2 class="title pumpkin">>OUR VISION</h2>
+        <p class="text" style="font-family: 'Nerd-font';">
+            A future where humanity thrives beyond Earth, harnessing the power of space technology to unlock new frontiers and redefine our place in the universe.
         </p>
     </div>
-
-
 
     <!-- About IEEE SB GECW Section -->
     <div class="container mt-5 about_us" tabindex="0" data-aos="fade-up">
@@ -57,17 +45,16 @@
             <!-- Left Content Section -->
             <div class="col-md-6 order-2 order-md-1">
                 <div class="content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
-                    <h3 class="mb-4 text-primary" style="font-weight: bold; font-size: 1.8rem; animation: fadeInUp 1s ease;">
-                        About IEEE SB GECW
-                    </h3>
-                    <p class="" style="text-align: justify; line-height: 1.8; font-size: 1.1rem; color: #555; animation: fadeInUp 1.2s ease;">
-                        IEEE Student Branch GEC Wayanad explores unexplored territories, offering a stunning outlook and dedication
-                        to excellence. We aim to build achievements, regional opportunities, conferences, and programs.
-                        IEEE SB creates professional innovation in technical fields and offers ways to connect and collaborate
-                        in the tech era, patching together innovation, inspiration, and interaction.
+                    <h2 class="mb-4 title" style="font-family: 'Beasigne', sans-serif; font-size: 1.8rem; font-weight: bold; letter-spacing: 1px; animation: fadeInUp 1s ease;">
+                        About Us
+                    </h2>
+                    <p class="" style="font-family: 'Nerd-font'; text-align: justify; line-height: 1.8; font-size: 1.1rem; color:rgba(211, 211, 211, 0.97); animation: fadeInUp 1.2s ease;">
+                        Welcome to the GECW Space Club, ORION, where innovation, exploration, and a passion for the universe come together!
+                        We are a student-led organization dedicated to expanding knowledge and enthusiasm for space exploration, astronomy, and aerospace technology.
+                        Our goal is to inspire and equip students with the skills and experience needed to engage with the space industry through hands-on projects, research, and collaborations.
                     </p>
                     <!-- Achievements List -->
-                    <ul class="list-unstyled" style="font-size: 1.1rem; line-height: 2; animation: fadeInUp 1.3s ease;">
+                    <ul class="list-unstyled" style="font-family: 'Nerd-font'; font-size: 1.1rem; line-height: 2; animation: fadeInUp 1.3s ease;">
                         <li><i class="fas fa-award" style="color: #FFD700;"></i> Received Outstanding Student Branch Award 2023 (Malabar Hub)</li>
                         <li><i class="fas fa-trophy" style="color: #FFD700;"></i> IEEE Regional Exemplary Student Branch Award 2022</li>
                         <li><i class="fas fa-star" style="color: #FFD700;"></i> IEEE Malabar Subsection Most Vibrant IEEE Student Branch Award 2022</li>
@@ -79,7 +66,7 @@
             <!-- Right Image Section -->
             <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
                 <div class="img-box text-center">
-                    <img src="https://images.pexels.com/photos/2422290/pexels-photo-2422290.jpeg?cs=srgb&dl=pexels-jopwell-2422290.jpg&fm=jpg" class="img-fluid rounded shadow-lg" alt="IEEE SB GECW Team" style="max-width: 100%; height: auto; transition: transform 0.3s;" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="" class="img-fluid rounded shadow-lg" alt="IEEE SB GECW Team" style="max-width: 100%; height: auto; transition: transform 0.3s;" data-aos="zoom-in" data-aos-delay="100">
                 </div>
             </div>
         </div>
@@ -123,32 +110,42 @@
     </div>
 
     <!-- Propose an Event Section -->
-    <div class="container mt-5 row">
-    <!-- Left Content (Description) -->
-    <div class="col-lg-8">
-        <h3 class="text-primary fw-bold mb-3" style="font-family: 'Poppins', sans-serif; animation: fadeInUp 1s ease;">
-            Propose an Event
-        </h3>
-        <p class="text-dark mb-4" style="font-size: 1.2rem; line-height: 1.8; animation: fadeInUp 1.2s ease; color: #6c757d;">
-            Have a brilliant idea for an event? Share it with us! We value your creativity and enthusiasm in making a difference.
-            Let’s work together to bring your vision to life.
-        </p>
+    <div style="background: rgba(255, 255, 255, 0.1); 
+                backdrop-filter: blur(8px); 
+                -webkit-backdrop-filter: blur(8px); 
+                border-radius: 2px; 
+                padding: 5px;
+                margin-bottom: 15; 
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+        <div class="container mt-4git row">
+            <!-- Left Content (Description) -->
+            <div class="col-lg-8">
+                <div>
+                    <h3 class="title mt-4" style="font-family: 'Beasigne', sans-serif; font-size: 1.8rem; font-weight: bold; letter-spacing: 1px; animation: fadeInUp 1s ease;">
+                        Propose an Event
+                    </h3>
+                    <p class="mb-4" style="font-family: 'Nerd-font'; font-size: 1.2rem; line-height: 1.8; animation: fadeInUp 1.2s ease; color: rgb(255, 255, 255);">
+                        Have a brilliant idea for an event? Share it with us! We value your creativity and enthusiasm in making a difference.
+                        Let’s work together to bring your vision to life.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Content (Button) -->
+            <div class="col-lg-4 d-flex justify-content-end align-items-center">
+                <form action="{{ route('eventProposal.index') }}" method="GET">
+                    <button type="submit"
+                        class="btn btn-lg shadow-lg propose-btn"
+                        style="font-family: 'Nerd-font'; color: white; animation: fadeInUp 1.3s ease;">
+                        Propose Now
+                    </button>
+                </form>
+            </div>
+
+
+        </div>
+
     </div>
-
-    <!-- Right Content (Button) -->
-    <div class="col-lg-4 d-flex justify-content-end align-items-center">
-    <form action="{{ route('eventProposal.index') }}" method="GET">
-        <button type="submit"
-                class="btn btn-primary btn-lg rounded-pill shadow-lg propose-btn"
-                style="animation: fadeInUp 1.3s ease;">
-            Propose Now
-        </button>
-    </form>
-</div>
-
-
-</div>
-
 </div>
 
 
@@ -157,7 +154,54 @@
 
 @endsection
 
+
 <style>
+    .mission-box p,
+    .vision-box p,
+    .mission-box h2,
+    .vision-box h2 {
+        color: #f8f9fa !important;
+        /* Use a lighter shade */
+    }
+
+    body {
+        background-color: rgb(46, 33, 33);
+        color: #fff;
+        font-family: 'Orbitron', sans-serif;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .mission-vision {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .mv_container {
+        background: rgb(0, 0, 0);
+        opacity: 0.7;
+        backdrop-filter: blur(10px);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgb(255, 254, 171);
+        transition: transform 0.3s;
+        text-align: left;
+    }
+
+    /* .mv_container:hover {
+        transform: scale(1.05);
+    } */
+
+    .text {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: #bbb;
+    }
+
+
     @keyframes fadeInUp {
         from {
             opacity: 0;
@@ -178,19 +222,7 @@
     /* //propose button hover effect */
 
     /* Button Hover Effect */
-    .propose-btn {
-        background: linear-gradient(90deg, #007bff, #00b4ff);
-        border: none;
-        color: white;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .propose-btn:hover {
-        background: linear-gradient(90deg, #00b4ff, #007bff);
-        transform: scale(1.05);
-        box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3);
-    }
-
+    
     /* Animation Keyframes */
     @keyframes fadeInUp {
         from {
@@ -216,3 +248,29 @@
         }
     }
 </style>
+
+
+
+
+
+<script>
+    AOS.init({
+        duration: 1000, // Animation duration (1 second)
+        once: true // Ensures animations run only once
+    });
+
+
+    $(document).ready(function() {
+        $(window).on("scroll", function() {
+            let scrollTop = $(window).scrollTop();
+            let fadeStart = 100; // Start fading in at 100px
+            let fadeEnd = 600; // Fully visible at 600px
+            let opacity = 1 - (scrollTop - fadeStart) / (fadeEnd - fadeStart);
+            let blurValue = (scrollTop / fadeEnd) * 10; // Increase blur effect
+
+            if (opacity < 0) opacity = 0;
+            if (opacity > 1) opacity = 1;
+            if (blurValue > 10) blurValue = 10; // Limit blur intensity
+        });
+    });
+</script>
