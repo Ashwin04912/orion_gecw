@@ -28,7 +28,7 @@
             <div class="col-md-4">
                 <h4 class="text-uppercase mb-4"><i class="bi bi-telephone-fill me-2"></i>Contact Us</h4>
                 <ul class="list-unstyled fs-6">
-                    <li class="mb-2"><i class="bi bi-envelope me-2"></i>ieeesbgecw@gmail.com</li>
+                    <li class="mb-2"><i class="bi bi-envelope me-2"></i>@gmail.com</li>
                     <li class="mb-2"><i class="bi bi-phone me-2"></i>+123 456 7890</li>
                     <li class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i> Thalappuzha, PO, Mananthavady, Kerala 670644</li>
                 </ul>
