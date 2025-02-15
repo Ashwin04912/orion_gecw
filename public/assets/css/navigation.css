@@ -1,6 +1,7 @@
 /* Navbar background color and shadow */
 .navbar {
-    background-color: #333 !important; /* Dark background color */
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Semi-transparent black */
+    backdrop-filter: blur(10px); /* Blurred background */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
     transition: background-color 0.3s ease; /* Smooth transition */
     position: fixed;
@@ -8,6 +9,14 @@
     top: 0;
     left: 0;
     z-index: 1000; /* Ensure navbar is on top of other elements */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-color: #000; /* Set a solid background color */
 }
 
 /* Adjust body or content to avoid overlap with fixed navbar */
