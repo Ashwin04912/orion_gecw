@@ -4,17 +4,17 @@
     <div class="container  entire mt-5 pt-5">
        
       
-        <h1 class="fw-bold pt-5">Events</h1>
+        <h1 class="heading pt-5" style="font-family: 'Beasigne'; color:white !important; font-weight: bold; letter-spacing: 1px; animation: fadeInUp 1s ease;">Events</h1>
         <hr>
         <div class="row pt-4">
             @foreach ($datas as $data)
-                <div class="card mb-5 border-0 shadow-sm rounded-3">
+                <div class="card mb-5 border-0 shadow-sm rounded-3 bg-dark">
                     <div class="row g-0 align-items-center">
                         <!-- Text Section -->
                         <div class="col-md-6 px-4 py-4 d-flex align-items-center">
                             <div class="card-body">
-                                <h4 class="card-title fw-bold mb-3 text-primary">{{ $data->title }}</h4>
-                                <p class="card-text text-muted mb-4" style="line-height: 1.6; text-align: justify;">
+                                <h4 class="fw-bold mb-3 text-primary" style="font-family: 'Beasigne'; color: red !important;">{{ $data->title }}</h4>
+                                <p class="text-muted mb-4" style="font-family: 'Nerd-font'; color:white !important; line-height: 1.6; text-align: justify;">
                                     {{ $data->description }}
                                 </p>
                                 <div class="d-flex align-items-center">
