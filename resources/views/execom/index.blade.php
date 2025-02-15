@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container pt-5">
-    <h1 class="fw-bold pt-5" style="font-family: 'Beasigne', sans-serif; color: white;";>Execom</h1>
+    <h1 class="fw-bold pt-5" style="font-family: 'Beasigne', sans-serif;animation: fadeInUp 1s ease; color: white;";>Execom</h1>
             <hr>
             <div class="row justify-content-center pt-4">
                 @foreach ($datas as $data)

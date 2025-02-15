@@ -54,6 +54,12 @@
     </div>
 
     <style>
+        .heading {
+            font-family: 'Beasigne';
+            color: rgb(255, 255, 255);
+            align-items: left;
+        }
+
         .title {
             font-size: 2rem;
             text-transform: uppercase;
@@ -143,6 +149,15 @@
             /* Reduced from pill shape to slightly rounded */
             padding: 12px 24px;
             /* Keeps good proportions */
+        }
+
+        .propose-btn:hover {
+            background-color:rgb(255, 73, 73);
+            /* Change color on hover */
+            transform: translateY(-5px);
+            /* Move up slightly */
+            box-shadow: 0 8px 12px rgba(255, 255, 255, 0.47);
+            /* Increase shadow */
         }
     </style>
 

@@ -15,11 +15,15 @@
 <body data-route-name="{{ Route::currentRouteName() }}">
 
     <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-        <div class="container-fluid ScrollCss" id="ScrollJq">
+        <div class="container-fluid ScrollCss pt-3" id="ScrollJq">
             <a class="navbar-brand d-flex align-items-center" href="{{ route('home') }}">
-                <img src="{{ asset('assets/images/logo.jpeg') }}" alt="Logo" width="75" height="100"
+                <img src="{{ asset('assets/images/logo.jpeg') }}" alt="Logo" width="80" height="80"
                     class="d-inline-block">
-                <h2 class="ms-3 mt-2" style="font-family: Beasigne; color:white;">ORION</h2>
+                <div style="display: flex; flex-direction: column; align-items: start; margin-left: 12px;">
+                    <h1 style="font-size: 48; font-family: Beasigne; color: white; margin-bottom: 0;">orion</h1>
+                    <p style="font-size: 10px; color: white; margin-top: -5px;">&nbsp;&nbsp;GOVT ENGINEERING COLLEGE, WAYANAD</p>
+                </div>
+
             </a>
 
             <button class="navbar-toggler m-4" type="button" data-bs-toggle="offcanvas"

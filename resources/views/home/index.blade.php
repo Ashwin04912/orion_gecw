@@ -53,14 +53,6 @@
                         We are a student-led organization dedicated to expanding knowledge and enthusiasm for space exploration, astronomy, and aerospace technology.
                         Our goal is to inspire and equip students with the skills and experience needed to engage with the space industry through hands-on projects, research, and collaborations.
                     </p>
-                    <!-- Achievements List -->
-                    <ul class="list-unstyled" style="font-family: 'Nerd-font'; font-size: 1.1rem; line-height: 2; animation: fadeInUp 1.3s ease;">
-                        <li><i class="fas fa-award" style="color: #FFD700;"></i> Received Outstanding Student Branch Award 2023 (Malabar Hub)</li>
-                        <li><i class="fas fa-trophy" style="color: #FFD700;"></i> IEEE Regional Exemplary Student Branch Award 2022</li>
-                        <li><i class="fas fa-star" style="color: #FFD700;"></i> IEEE Malabar Subsection Most Vibrant IEEE Student Branch Award 2022</li>
-                        <li><i class="fas fa-medal" style="color: #FFD700;"></i> 2<sup>nd</sup> Darrel Chong Award 2022 - For Sight Camp</li>
-                        <li><i class="fas fa-certificate" style="color: #FFD700;"></i> 2<sup>nd</sup> Inspiring IEEE SIGHT Branch Award for the year 2023</li>
-                    </ul>
                 </div>
             </div>
             <!-- Right Image Section -->
@@ -70,43 +62,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Partner Logos Section -->
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <!-- Partner Logos -->
-            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                <a href="{{route('mtts.index')}}" class="hover-scale" data-aos="fade-up" data-aos-delay="100">
-                    <img src="{{ asset('assets/images/mtts_logo.png') }}" class="img-fluid image-container" alt="MTTS Logo">
-                </a>
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                <a href="{{route('computer.index')}}" class="hover-scale" data-aos="fade-up" data-aos-delay="200">
-                    <img src="{{ asset('assets/images/csociety_logo.png') }}" class="img-fluid image-container" alt="CSociety Logo" style=" height: auto; width: 550px;">
-                </a>
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                <a href="{{route('aps.index')}}" class="hover-scale" data-aos="fade-up" data-aos-delay="300">
-                    <img src="{{ asset('assets/images/aps_logo.png') }}" class="img-fluid image-container p-5" alt="APS Logo">
-                </a>
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                <a href="{{route('wie.index')}}" class="hover-scale" data-aos="fade-up" data-aos-delay="400">
-                    <img src="{{ asset('assets/images/wie_logo.png') }}" class="img-fluid image-container p-5" alt="WIE Logo">
-                </a>
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                <a href="{{route('sight.index')}}" class="hover-scale" data-aos="fade-up" data-aos-delay="500">
-                    <img src="{{ asset('assets/images/sight_logo.png') }}" class="img-fluid image-container p-3" alt="SIGHT Logo">
-                </a>
-            </div>
-        </div>
-
     </div>
 
     <!-- Propose an Event Section -->

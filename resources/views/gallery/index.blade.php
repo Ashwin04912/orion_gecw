@@ -1,4 +1,4 @@
-<!-- @extends('layouts.app') -->
+@extends('layouts.app')
 
 @section('content')
 <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -12,7 +12,7 @@
 <!-- Page Content -->
 
 <div class="container pt-5">
-    <h1 class="fw-bold pt-5" style="font-family: 'Beasigne', sans-serif; color: white;";>Gallery</h1>
+    <h1 class="heading fw-bold pt-5" style="font-family: 'Beasigne', sans-serif;animation: fadeInUp 1s ease; color: white;";>Gallery</h1>
   
     <hr>
 
