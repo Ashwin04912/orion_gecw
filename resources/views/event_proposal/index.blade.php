@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container mt-5">
+<div class="container mt-5 mb-3">
     <!-- success and error message code -->
     @if(session('success'))
     <div class="alert alert-success">
@@ -25,11 +25,11 @@
     <!-- Form Section -->
     <div class="row justify-content-center">
         <div class="col-md-8 col-lg-6">
-            <div class="card shadow-lg rounded-3 p-5" style="background: #ffffff;">
-                <h3 class="text-primary text-center mb-4" style="font-family: 'Poppins', sans-serif; font-weight: bold;">
+            <div class="card shadow-lg rounded-3 p-5" style="background:rgba(255, 255, 255, 0.11);">
+                <h3 class="text-primary text-center mb-4" style="font-family: 'Beasigne', sans-serif;color:white !important; font-weight: bold;">
                     Propose Your Event
                 </h3>
-                <p class="text-center text-muted mb-4" style="font-size: 1.1rem; font-weight: 500;">
+                <p class="text-center text-muted mb-4" style="font-family: 'Nerd-font'; font-size: 1.1rem;color:white !important; font-weight: 500;">
                     Have an exciting idea for an event? Fill out the form below and share it with us!
                 </p>
 
@@ -37,29 +37,29 @@
                 <form id="eventForm" action="{{ route('eventProposal.sentmail') }}" method="POST">
                     @csrf
                     <!-- Personal Details Section -->
-                    <h5 class="text-primary">Personal Details</h5>
+                    <h5 class="text-primary" style="font-family: Nerd-font; color:red !important">Personal Details</h5>
                     <hr class="my-3">
 
                     <!-- Name -->
                     <div class="mb-4">
-                        <label for="name" class="form-label text-dark" style="font-weight: bold;">Your Name</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                        <label for="name" class="form-label text-light" style="font-family: Nerd-font; font-weight: bold;">Your Name</label>
+                        <input type="text" class="form-control" id="box" name="name" placeholder="Enter your name" required>
                     </div>
 
                     <!-- Email -->
                     <div class="mb-4">
-                        <label for="email" class="form-label text-dark" style="font-weight: bold;">Email Address</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                        <label for="email" class="form-label text-dark" style="font-family: Nerd-font; color:white !important;font-weight: bold;">Email Address</label>
+                        <input type="email" class="form-control" id="box" name="email" placeholder="Enter your email" required>
                     </div>
 
                     <!-- Phone Number -->
                     <div class="mb-4">
-                        <label for="phone" class="form-label text-dark" style="font-weight: bold;">Phone Number</label>
-                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+                        <label for="phone" class="form-label text-dark" style="font-family: Nerd-font; color:white !important; font-weight: bold;">Phone Number</label>
+                        <input type="tel" class="form-control" id="box" name="phone" placeholder="Enter your phone number" required>
                     </div>
 
                     <!-- Event Details Section -->
-                    <h5 class="text-primary">Event Details</h5>
+                    <h5 class="text-primary" style="font-family: Nerd-font; color:red !important;">Event Details</h5>
                     <hr class="my-3">
 
                     <!-- Event Name -->
@@ -70,14 +70,14 @@
 
                     <!-- Event Description -->
                     <div class="mb-4">
-                        <label for="event-description" class="form-label text-dark" style="font-weight: bold;">Event Description</label>
-                        <textarea class="form-control" id="event-description" name="event_description" rows="4" placeholder="Describe your event idea" required></textarea>
+                        <label for="event-description" class="form-label text-dark" style="font-family: Nerd-font; color:white !important; font-weight: bold;">Event Description</label>
+                        <textarea class="form-control" id="box" name="event_description" rows="4" placeholder="Describe your event idea" required></textarea>
                     </div>
 
                     <!-- Expected Audience -->
                     <div class="mb-4">
-                        <label for="audience" class="form-label text-dark" style="font-weight: bold;">Expected Audience</label>
-                        <select class="form-select" id="audience" name="audience" required>
+                        <label for="audience" class="form-label text-dark" style="font-family: Nerd-font; color:white !important; font-weight: bold;">Expected Audience</label>
+                        <select class="form-select" id="box" name="audience" required>
                             <option value="">Select audience type</option>
                             <option value="students">Students</option>
                             <option value="professionals">Faculties</option>
@@ -85,10 +85,10 @@
                         </select>
                     </div>
 
-                     <!-- Resource person -->
-                     <div class="mb-4">
-                        <label for="res_person" class="form-label text-dark" style="font-weight: bold;">Do you have a Resource Person</label>
-                        <select class="form-select" id="res_person" name="res_person" required>
+                    <!-- Resource person -->
+                    <div class="mb-4">
+                        <label for="res_person" class="form-label text-dark" style="font-family: Nerd-font; color:white !important; font-weight: bold;">Do you have a Resource Person</label>
+                        <select class="form-select" id="box" name="res_person" required>
                             <option value="">Select</option>
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
@@ -98,19 +98,19 @@
 
                     <!-- Expected Audience Count -->
                     <div class="mb-4">
-                        <label for="budget" class="form-label text-dark" style="font-weight: bold;">Expected Audience Count</label>
-                        <input type="number" class="form-control" id="budget" name="audience_count" placeholder="Expected participants for the event" required>
+                        <label for="budget" class="form-label text-dark" style="font-family: Nerd-font; color:white !important; font-weight: bold;">Expected Audience Count</label>
+                        <input type="number" class="form-control" id="box" name="audience_count" placeholder="Expected participants for the event" required>
                     </div>
 
                     <!-- Additional Notes -->
                     <div class="mb-4">
-                        <label for="notes" class="form-label text-dark" style="font-weight: bold;">Additional Notes</label>
-                        <textarea class="form-control" id="notes" name="notes" rows="4" placeholder="Any additional details or notes" ></textarea>
+                        <label for="notes" class="form-label text-dark" style="font-family: Nerd-font; color:white !important; font-weight: bold;">Additional Notes</label>
+                        <textarea class="form-control" id="box" name="notes" rows="4" placeholder="Any additional details or notes"></textarea>
                     </div>
 
                     <!-- Submit Button -->
                     <div class="text-center">
-                        <button type="submit" class="btn btn-primary btn-lg rounded-pill shadow-lg" style="animation: fadeInUp 1.3s ease; padding: 12px 24px;" >
+                        <button type="submit" class="btn btn-lg propose-btn shadow-lg" style="font-family: 'Nerd-font'; color: white; animation: fadeInUp 1.3s ease;">
                             Submit Event Idea
                         </button>
                     </div>
@@ -133,6 +133,18 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 9999;
+    }
+
+    #box {
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+    }
+
+    #box::placeholder {
+        color: white;
+        opacity: 0.6;
+        /* Ensures full visibility */
     }
 </style>
 
