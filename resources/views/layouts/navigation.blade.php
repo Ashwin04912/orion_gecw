@@ -16,15 +16,14 @@
 
     <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
         <div class="container-fluid ScrollCss pt-3" id="ScrollJq">
-            <a class="navbar-brand d-flex align-items-center" href="{{ route('home') }}">
-                <img src="{{ asset('assets/images/logo.jpeg') }}" alt="Logo" width="80" height="80"
-                    class="d-inline-block">
-                <div style="display: flex; flex-direction: column; align-items: start; margin-left: 12px;">
-                    <h1 style="font-size: 48; font-family: Beasigne; color: white; margin-bottom: 0;">orion</h1>
-                    <p style="font-size: 10px; color: white; margin-top: -5px;">&nbsp;&nbsp;GOVT ENGINEERING COLLEGE, WAYANAD</p>
+            <a class="navbar-brand d-flex align-items-center gap-2" href="{{ route('home') }}">
+                <img src="{{ asset('assets/images/logo.jpeg') }}" alt="Logo" width="80" height="80" class="rounded-circle">
+                <div class="d-flex flex-column">
+                    <h1 class="fs-1 fw-bold text-white text-uppercase m-0">Orion</h1>
+                    <p class="fs-6 text-white m-0">GOVT ENGINEERING COLLEGE, WAYANAD</p>
                 </div>
-
             </a>
+
 
             <button class="navbar-toggler m-4" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -120,7 +119,5 @@
             </div>
         </div>
     </nav>
-
-    <script src="{{asset('assets/js/navigation.js')}}"></script>
 
 </body>

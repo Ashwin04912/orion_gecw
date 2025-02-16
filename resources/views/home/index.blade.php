@@ -2,17 +2,18 @@
 @section('content')
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Background Image Section -->
 <x-background_home_image image="assets/images/space1.webp">
     <div class="container">
-        <div class="row justify-content-md-left align-items-center">
+        <div class="justify-content-md-left align-items-center">
             <div class="col-12 col-md-11 col-lg-9 col-xl-8 col-xxl-7 text-left">
-                <h2 class="display-1 text-white fw-bold mb-3" style="font-family: 'Beasigne', sans-serif; animation: fadeInUp 1s ease; font-size: 50px">
-                Dream.<br> Innovate.<br> Conquer.
-                </h2>
-                <p class="lead text-white mb-5 d-flex justify-content-sm-left" style="font-family: 'Nerd-font'; font-size: 1.1rem; animation: fadeInUp 1.2s ease;">
+                <h1 class="text-white fw-bold mb-3 justify-content-sm-left" style="font-size:5vw; font-family: 'Beasigne', sans-serif; animation: fadeInUp 1s ease;">
+                    Dream.<br> Innovate.<br> Conquer.
+                </h1>
+                <p class="text-white d-flex justify-content-sm-left" style="font-size:2vw; font-family: 'Nerd-font'; animation: fadeInUp 1.2s ease;">
                     <span class="col-12 col-sm-10 col-md-8 col-xxl-7" style="font-style: italic;">
-                    "Remember to look up at the stars and not down at your feet. Try to make sense of what you see, and wonder about what makes the universe exist. Be curious.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Stephen Hawking"
+                        "Remember to look up at the stars and not down at your feet.<br>-Stephen Hawking"
                     </span>
                 </p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-left">
@@ -177,7 +178,7 @@
     /* //propose button hover effect */
 
     /* Button Hover Effect */
-    
+
     /* Animation Keyframes */
     @keyframes fadeInUp {
         from {

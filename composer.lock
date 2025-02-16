@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5682c807a62fcd44c638c7b0cb1e3e39",
+    "content-hash": "488dbd4a552ccddddba33a1272ebab78",
     "packages": [
         {
             "name": "beberlei/assert",
@@ -1380,6 +1380,64 @@
                 }
             ],
             "time": "2023-12-03T19:50:20+00:00"
+        },
+        {
+            "name": "insolita/unused-scanner",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Insolita/unused-scanner.git",
+                "reference": "ffefb5877fe9b3b3ceabdcd49d27ae85b9058597"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Insolita/unused-scanner/zipball/ffefb5877fe9b3b3ceabdcd49d27ae85b9058597",
+                "reference": "ffefb5877fe9b3b3ceabdcd49d27ae85b9058597",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=7.1",
+                "symfony/finder": "^3.4|^4.0|^5.0|^6.0"
+            },
+            "require-dev": {
+                "php-mock/php-mock-phpunit": "^2.6",
+                "phpunit/phpunit": "^7.0|^8.0|^9.0",
+                "symfony/thanks": "^1.2"
+            },
+            "bin": [
+                "unused_scanner"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-legacy": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "tests\\": "tests",
+                    "insolita\\Scanner\\Lib\\": "Lib",
+                    "insolita\\Scanner\\Exceptions\\": "Exceptions"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "mit"
+            ],
+            "authors": [
+                {
+                    "name": "insolita",
+                    "email": "webmaster100500@ya.ru"
+                }
+            ],
+            "description": "Detect unused composer dependencies",
+            "support": {
+                "issues": "https://github.com/Insolita/unused-scanner/issues",
+                "source": "https://github.com/Insolita/unused-scanner/tree/2.4.0"
+            },
+            "time": "2022-01-05T22:07:21+00:00"
         },
         {
             "name": "laravel/framework",

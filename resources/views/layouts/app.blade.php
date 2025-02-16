@@ -58,6 +58,7 @@
             font-family: 'Beasigne';
             color: rgb(255, 255, 255);
             align-items: left;
+            
         }
 
         .title {
