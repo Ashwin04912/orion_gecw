@@ -6,14 +6,14 @@
 <!-- Background Image Section -->
 <x-background_home_image image="assets/images/space1.webp">
     <div class="container">
-        <div class="row justify-content-md-center align-items-center">
-            <div class="col-12 col-md-11 col-lg-9 col-xl-8 col-xxl-7 text-center">
-                <h2 class="display-1 text-white fw-bold mb-4" style="font-family: 'Poppins', sans-serif; animation: fadeInUp 1s ease;">
+        <div class="row justify-content-md-lefft align-items-center">
+            <div class="col-12 col-md-11 col-lg-9 col-xl-8 col-xxl-7 text-lefft">
+                <h2 class="display-1 text-white fw-bold mb-4" style="font-family: Beasigne; animation: fadeInUp 1s ease;">
                     Dream of Success
                 </h2>
-                <p class="lead text-white mb-5 d-flex justify-content-sm-center" style="font-size: 1.1rem; animation: fadeInUp 1.2s ease;">
+                <p class="lead text-white mb-5 d-flex justify-content-sm-left" style="font-family: Nerd-font; font-size: 1.1rem; animation: fadeInUp 1.2s ease;">
                     <span class="col-12 col-sm-10 col-md-8 col-xxl-7">
-                        There are three ways to ultimate success: The first way is to be kind. The second way is to be kind. The third way is to be kind.
+                        No dream is too big, no beginning too small, when fueled by determination and vision.
                     </span>
                 </p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
@@ -25,20 +25,36 @@
 </x-background_home_image>
 
 <div class="container mt-5 d-flex flex-wrap justify-content-center gap-4">
-    <!-- Mission Box -->
-    <div class="mv_container container mission-box col-12 col-md-5" data-aos="fade-up">
-        <h2 class="title pumpkin">>OUR MISSION</h2>
-        <p class="text" style="font-family: 'Nerd-font';">
-            To push the boundaries of human knowledge, inspire the next generation of space pioneers, and explore the infinite cosmos through innovation and collaboration.
-        </p>
+    <!-- Mission Vision Box -->
+    <div class="container d-flex flex-wrap justify-content-center gap-4">
+        <div class="container">
+            <div class="row justify-content-center gap-4 gap-md-0">
+                <div class="container">
+                    <div class="row justify-content-center gap-4 gap-md-5">
+                        <!-- Mission Box -->
+                        <div class="mv_container mission-box col-12 col-md-5" data-aos="fade-up">
+                            <h2 class="title pumpkin text-uppercase fw-bold 
+                   fs-4 fs-md-3 fs-lg-1">>OUR MISSION</h2>
+                            <p class="text fs-6 fs-md-5 fs-lg-4 text-light" style="font-family: 'Nerd-font';">
+                                To push the boundaries of human knowledge, inspire the next generation of space pioneers, and explore the infinite cosmos through innovation and collaboration.
+                            </p>
+                        </div>
+
+                        <!-- Vision Box -->
+                        <div class="mv_container vision-box col-12 col-md-5" data-aos="fade-up">
+                            <h2 class="title pumpkin text-uppercase fw-bold 
+                   fs-4 fs-md-3 fs-lg-1">>OUR VISION</h2>
+                            <p class="text fs-6 fs-md-5 fs-lg-4 text-light" style="font-family: 'Nerd-font';">
+                                A future where humanity thrives beyond Earth, harnessing the power of space technology to unlock new frontiers and redefine our place in the universe.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <!-- Vision Box -->
-    <div class="mv_container container vision-box col-12 col-md-5" data-aos="fade-up">
-        <h2 class="title pumpkin">>OUR VISION</h2>
-        <p class="text" style="font-family: 'Nerd-font';">
-            A future where humanity thrives beyond Earth, harnessing the power of space technology to unlock new frontiers and redefine our place in the universe.
-        </p>
-    </div>
+
 
     <!-- About IEEE SB GECW Section -->
     <div class="container mt-5 about_us" tabindex="0" data-aos="fade-up">
@@ -46,10 +62,14 @@
             <!-- Left Content Section -->
             <div class="col-md-6 order-2 order-md-1">
                 <div class="content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
-                    <h2 class="mb-4 title" style="font-family: 'Beasigne', sans-serif; font-size: 1.8rem; font-weight: bold; letter-spacing: 1px; animation: fadeInUp 1s ease;">
+                    <h2 class="mb-4 title text-uppercase fw-bold 
+                           fs-3 fs-md-2 fs-lg-1"
+                        style="font-family: 'Beasigne', sans-serif; letter-spacing: 1px; animation: fadeInUp 1s ease;">
                         About Us
                     </h2>
-                    <p class="" style="font-family: 'Nerd-font'; text-align: justify; line-height: 1.8; font-size: 1.1rem; color:rgba(211, 211, 211, 0.97); animation: fadeInUp 1.2s ease;">
+                    <p class="text-start lh-lg 
+                          fs-sm-6 fs-md-5 fs-lg-4"
+                        style="font-family: 'Nerd-font'; animation: fadeInUp 1.2s ease;">
                         Welcome to the GECW Space Club, ORION, where innovation, exploration, and a passion for the universe come together!
                         We are a student-led organization dedicated to expanding knowledge and enthusiasm for space exploration, astronomy, and aerospace technology.
                         Our goal is to inspire and equip students with the skills and experience needed to engage with the space industry through hands-on projects, research, and collaborations.
@@ -59,11 +79,15 @@
             <!-- Right Image Section -->
             <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
                 <div class="img-box text-center">
-                    <img src="" class="img-fluid rounded shadow-lg" alt="ORION GECW" style="max-width: 100%; height: auto; transition: transform 0.3s;" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="" class="img-fluid rounded shadow-lg"
+                        alt="ORION GECW"
+                        style="max-width: 100%; height: auto; transition: transform 0.3s;"
+                        data-aos="zoom-in" data-aos-delay="100">
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- Propose an Event Section -->
     <div style="background: rgba(255, 255, 255, 0.1); 

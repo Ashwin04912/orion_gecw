@@ -99,7 +99,7 @@
                     <!-- Expected Audience Count -->
                     <div class="mb-4">
                         <label for="budget" class="form-label text-dark" style="font-family: Nerd-font; color:white !important; font-weight: bold;">Expected Audience Count</label>
-                        <input type="number" class="form-control" id="box" name="audience_count" placeholder="Expected participants for the event" required>
+                        <input type="number" class="form-control" id="box" name="audience_count" placeholder="Expected participants" required>
                     </div>
 
                     <!-- Additional Notes -->

@@ -12,7 +12,7 @@
 <!-- Page Content -->
 
 <div class="container pt-5">
-    <h1 class="heading title fw-bold pt-5" style="font-family: 'Beasigne', sans-serif; animation: fadeInUp 1s ease; color: white;";>Gallery</h1>
+    <h2 class="heading title fw-bold pt-5 fs-4 fs-md-3 fs-lg-1" style="font-family: 'Beasigne', sans-serif; animation: fadeInUp 1s ease; color: white;";>Gallery</h2>
   
     <hr>
 

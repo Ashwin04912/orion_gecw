@@ -5,7 +5,7 @@
 
 
     <div class="col-lg-6 col-md-8 col-sm-12">
-        <h1 class="heading pt-5 title fs-1 fs-md-2 fs-sm-3 fs-xs-4" style="font-family: 'Beasigne'; color:white !important; font-weight: bold; letter-spacing: 1px; animation: fadeInUp 1s ease;">Events</h1>
+        <h1 class="heading title fs-4 fs-md-3 fs-lg-1" style="font-family: 'Beasigne'; color:white !important; font-weight: bold; letter-spacing: 1px; animation: fadeInUp 1s ease;">Events</h1>
     </div>
     <hr>
     <div class="row pt-4 container align-items-center col-md-12 col-sm-10 mx-auto">
@@ -16,7 +16,7 @@
                 <div class="col-md-6 px-4 py-4 d-flex">
                     <div class="card-body">
                         <h4 class="fw-bold mb-3 text-primary" style="font-family: 'Beasigne'; color: red !important;">{{ $data->title }}</h4>
-                        <p class="fs-2 fs-md-1 fs-sm-1 fs-xs-0 text-muted mb-4" style="font-family: 'Nerd-font'; color:white !important; line-height: 1.6; text-align: justify;">
+                        <p class="fs-lg-4 fs-md-5 fs-6 text-muted mb-4" style="font-family: 'Nerd-font'; color:white !important; line-height: 1.6; text-align: left;">
                             {{ $data->description }}
                         </p>
                         <div class="d-flex align-items-center">

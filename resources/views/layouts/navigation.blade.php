@@ -15,20 +15,15 @@
 <body data-route-name="{{ Route::currentRouteName() }}">
 
     <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-        <div class="container-fluid ScrollCss pt-3" id="ScrollJq">
-            <a class="navbar-brand d-flex align-items-center gap-2" href="{{ route('home') }}">
-                <img class='' src="{{ asset('assets/images/logo.jpeg') }}" alt="Logo"  class="rounded-circle">
-                <div class="d-flex flex-column">
-                    <h1 class="fs-1 fw-bold text-white text-uppercase m-0">Orion</h1>
-                    <p class="fs-6 text-white m-0">GOVT ENGINEERING COLLEGE, WAYANAD</p>
-                </div>
+        <div class="container-fluid ScrollCss" id="ScrollJq">
+            <a class="navbar-brand" href="{{ route('home') }}">
+                <img src="{{ asset('assets/images/logo.jpeg') }}" alt="Logo" width="50" height="50"
+                    class="d-inline-block align-text-top">
             </a>
-
-
             <button class="navbar-toggler m-4" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1.5em" height="1.5em"
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="4px" width="1.5em" height="1.5em"
                         viewBox="0 0 48 48">
                         <linearGradient id="ULyvxr9k_jV3hToEf4Ujga_6uJdcB0tVRwZ_gr1" x1="12.066" x2="34.891"
                             y1=".066" y2="22.891" gradientUnits="userSpaceOnUse">
@@ -60,16 +55,16 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel" style="background-color: transparent">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">IEEE SB GECW</h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font: Beasigne">orion gecw</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
                         style="background-color: red"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav ms-auto me-4">
+                    <ul class="navbar-nav ms-auto me-1">
                         <li class="nav-item {{ Route::currentRouteName() == 'home' ? 'selected' : '' }}">
                             <a class="nav-link active text-light" aria-current="page" href="{{ route('home') }}"><span class="name">Home</span></a>
                         </li>
-                      
+
                         <li class="nav-item {{ Route::currentRouteName() == 'events.index' ? 'selected' : '' }}">
                             <a class="nav-link text-light" href="{{ route('events.index') }}"><span class="name">Events</span></a>
                         </li>
