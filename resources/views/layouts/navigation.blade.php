@@ -17,13 +17,12 @@
     <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
         <div class="container-fluid ScrollCss pt-3" id="ScrollJq">
             <a class="navbar-brand d-flex align-items-center gap-2" href="{{ route('home') }}">
-                <img src="{{ asset('assets/images/logo.jpeg') }}" alt="Logo" width="80" height="80" class="rounded-circle">
+                <img class='' src="{{ asset('assets/images/logo.jpeg') }}" alt="Logo"  class="rounded-circle">
                 <div class="d-flex flex-column">
                     <h1 class="fs-1 fw-bold text-white text-uppercase m-0">Orion</h1>
                     <p class="fs-6 text-white m-0">GOVT ENGINEERING COLLEGE, WAYANAD</p>
                 </div>
             </a>
-
 
             <button class="navbar-toggler m-4" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -69,23 +68,7 @@
                         <li class="nav-item {{ Route::currentRouteName() == 'home' ? 'selected' : '' }}">
                             <a class="nav-link active text-light" aria-current="page" href="{{ route('home') }}"><span class="name">Home</span></a>
                         </li>
-                        <!-- <li class="nav-item {{ Route::currentRouteName() == 'about.us' ? 'selected' : '' }}">
-                            <a class="nav-link text-light" onclick="$('.about_us')[0].focus()" href="#">About
-                                Us</a>
-                        </li> -->
-                        <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-light d-flex align-items-center {{ in_array(Route::currentRouteName(), ['computer.index', 'wie.index', 'aps.index', 'mtts.index', 'sight.index']) ? 'selected' : '' }}"
-                                href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false">
-                                <span class="name">Societies</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item {{ Route::currentRouteName() == 'computer.index' ? 'selected' : '' }}" href="{{route('computer.index')}}">Computer Society</a></li>
-                                <li><a class="dropdown-item {{ Route::currentRouteName() == 'wie.index' ? 'selected' : '' }}" href="{{route('wie.index')}}">Women In Engineering</a></li>
-                                <li><a class="dropdown-item {{ Route::currentRouteName() == 'aps.index' ? 'selected' : '' }}" href="{{route('aps.index')}}">Antennas and Propagation Society</a></li>
-                                <li><a class="dropdown-item {{ Route::currentRouteName() == 'mtts.index' ? 'selected' : '' }}" href="{{route('mtts.index')}}">Microwave Theory and Technology Society</a></li>
-                                <li><a class="dropdown-item {{ Route::currentRouteName() == 'sight.index' ? 'selected' : '' }}" href="{{route('sight.index')}}">Sight</a></li>
-                            </ul>
-                        </li> -->
+                      
                         <li class="nav-item {{ Route::currentRouteName() == 'events.index' ? 'selected' : '' }}">
                             <a class="nav-link text-light" href="{{ route('events.index') }}"><span class="name">Events</span></a>
                         </li>
@@ -94,9 +77,7 @@
                             <a class="nav-link text-light" onclick="" href="{{ route('execom.index') }}"><span class="name">Execom</span></a>
                         </li>
 
-                        <!-- <li class="nav-item {{ Route::currentRouteName() == 'achievements' ? 'selected' : '' }}">
-                            <a class="nav-link text-light" href="{{ route('achievements') }}">Achievements</a>
-                        </li> -->
+ 
                         <li class="nav-item {{ Route::currentRouteName() == 'gallery.index' ? 'selected' : '' }}">
                             <a class="nav-link text-light" href="{{ route('gallery.index') }}"><span class="name">Gallery</span></a>
                         </li>
