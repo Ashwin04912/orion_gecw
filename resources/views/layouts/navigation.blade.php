@@ -24,6 +24,7 @@
                 </div>
             </a>
 
+
             <button class="navbar-toggler m-4" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span>
@@ -77,7 +78,6 @@
                             <a class="nav-link text-light" onclick="" href="{{ route('execom.index') }}"><span class="name">Execom</span></a>
                         </li>
 
- 
                         <li class="nav-item {{ Route::currentRouteName() == 'gallery.index' ? 'selected' : '' }}">
                             <a class="nav-link text-light" href="{{ route('gallery.index') }}"><span class="name">Gallery</span></a>
                         </li>
