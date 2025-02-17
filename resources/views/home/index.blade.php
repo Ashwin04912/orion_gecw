@@ -16,7 +16,7 @@
                         No dream is too big, no beginning too small, when fueled by determination and vision.
                     </span>
                 </p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-left">
                     <button type="button" onclick="$('.about_us')[0].focus()" class="btn btn-outline-light btn-lg rounded-pill shadow-lg hover-scale animate__animated animate__pulse">Get Started</button>
                 </div>
             </div>

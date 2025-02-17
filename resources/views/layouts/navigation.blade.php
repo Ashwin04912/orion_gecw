@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +13,45 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
     <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <title>orion_gecw</title>
+    <style>
+        /* Custom CSS for the new navigation bar */
+        @media (max-width: 991.98px) {
+            .offcanvas {
+                width: 250px !important; /* Set a fixed width for the sidebar */
+                height: 100vh !important; /* Full height */
+                background-color: #343a40 !important; /* Dark background */
+                color: #fff !important; /* Light text */
+            }
+            .offcanvas-header {
+                background-color: #212529; /* Darker header background */
+                border-bottom: 1px solid #444;
+            }
+            .offcanvas-body {
+                padding: 20px;
+                overflow-y: auto; /* Allow scrolling if content overflows */
+            }
+            .navbar-nav .nav-link {
+                color: #fff !important; /* Light text for links */
+            }
+            .navbar-nav .nav-link:hover {
+                color: #f8f9fa !important; /* Lighter text on hover */
+            }
+            .btn-close {
+                filter: invert(1); /* Invert the close button color for visibility */
+            }
+        }
+    </style>
 </head>
 
 <body data-route-name="{{ Route::currentRouteName() }}">
 
-    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-        <div class="container-fluid ScrollCss" id="ScrollJq">
-            <a class="navbar-brand" href="{{ route('home') }}">
-                <img src="{{ asset('assets/images/logo.jpeg') }}" alt="Logo" width="50" height="50"
-                    class="d-inline-block align-text-top">
-            </a>
+<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container-fluid ScrollCss" id="ScrollJq">
+        <a class="navbar-brand d-flex align-items-center" href="{{ route('home') }}">
+            <img src="{{ asset('assets/images/logo.jpeg') }}" alt="Logo" width="50" height="50"
+                class="d-inline-block align-text-top">
+            <span class="ms-2 d-none d-md-inline heading">orion</span> 
+        </a>
             <button class="navbar-toggler m-4" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span>
@@ -52,12 +84,11 @@
                     </svg>
                 </span>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel" style="background-color: transparent">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font: Beasigne">orion gecw</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
-                        style="background-color: red"></button>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-family: 'Beasigne', sans-serif;">orion gecw</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav ms-auto me-1">
@@ -88,8 +119,6 @@
                             </form>
                         </li>
                         @endif
-
-
                     </ul>
                 </div>
             </div>
@@ -97,3 +126,5 @@
     </nav>
 
 </body>
+
+</html>
