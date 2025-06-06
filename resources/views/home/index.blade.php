@@ -67,9 +67,7 @@
                         style="font-family: 'Beasigne', sans-serif; letter-spacing: 1px; animation: fadeInUp 1s ease;">
                         About Us
                     </h2>
-                    <p class="text-start lh-lg 
-                          fs-sm-6 fs-md-5 fs-lg-4"
-                        style="font-family: 'Nerd-font'; animation: fadeInUp 1.2s ease;">
+                    <p class="text-start lh-lg fs-sm-6 fs-md-5 fs-lg-4" style="font-family: 'popins'; animation: fadeInUp 1.2s ease;">
                         Welcome to the GECW Space Club, ORION, where innovation, exploration, and a passion for the universe come together!
                         We are a student-led organization dedicated to expanding knowledge and enthusiasm for space exploration, astronomy, and aerospace technology.
                         Our goal is to inspire and equip students with the skills and experience needed to engage with the space industry through hands-on projects, research, and collaborations.
@@ -89,168 +87,168 @@
     </div>
 
 
-    <!-- Propose an Event Section -->
-    <div style="background: rgba(255, 255, 255, 0.1); 
+            <!-- Propose an Event Section -->
+            <div style="background: rgba(255, 255, 255, 0.1); 
                 backdrop-filter: blur(8px); 
                 -webkit-backdrop-filter: blur(8px); 
                 border-radius: 10px; 
                 padding: 5px;
                 margin-bottom: 15; 
                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
-        <div class="container mt-4git row">
-            <!-- Left Content (Description) -->
-            <div class="col-lg-8">
-                <div>
-                    <h3 class="title mt-4" style="font-family: 'Beasigne', sans-serif; font-size: 1.8rem; font-weight: bold; letter-spacing: 1px; animation: fadeInUp 1s ease;">
-                        Propose an Event
-                    </h3>
-                    <p class="mb-4" style="font-family: 'Nerd-font'; font-size: 1.2rem; line-height: 1.8; animation: fadeInUp 1.2s ease; color: rgb(255, 255, 255);">
-                        Have a brilliant idea for an event? Share it with us! We value your creativity and enthusiasm in making a difference.
-                        Let’s work together to bring your vision to life.
-                    </p>
+                <div class="container mt-4git row">
+                    <!-- Left Content (Description) -->
+                    <div class="col-lg-8">
+                        <div>
+                            <h3 class="title mt-4" style="font-family: 'Beasigne', sans-serif; font-size: 1.8rem; font-weight: bold; letter-spacing: 1px; animation: fadeInUp 1s ease;">
+                                Propose an Event
+                            </h3>
+                            <p class="mb-4 fs-sm-6 fs-md-5 fs-lg-4" style="font-family: 'Nerd-font'; font-size: 1.0rem; line-height: 1.8; animation: fadeInUp 1.2s ease; color: rgb(255, 255, 255);">
+                                Have a brilliant idea for an event? Share it with us! We value your creativity and enthusiasm in making a difference.
+                                Let’s work together to bring your vision to life.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right Content (Button) -->
+                    <div class="col-lg-4 d-flex justify-content-end align-items-center">
+                        <form action="{{ route('eventProposal.index') }}" method="GET">
+                            <button type="submit"
+                                class="btn btn-lg shadow-lg propose-btn"
+                                style="font-family: 'popins'; color: white; animation: fadeInUp 1.3s ease;">
+                                Propose Now
+                            </button>
+                        </form>
+                    </div>
+
+
                 </div>
+
             </div>
-
-            <!-- Right Content (Button) -->
-            <div class="col-lg-4 d-flex justify-content-end align-items-center">
-                <form action="{{ route('eventProposal.index') }}" method="GET">
-                    <button type="submit"
-                        class="btn btn-lg shadow-lg propose-btn"
-                        style="font-family: 'Nerd-font'; color: white; animation: fadeInUp 1.3s ease;">
-                        Propose Now
-                    </button>
-                </form>
-            </div>
-
-
         </div>
 
-    </div>
-</div>
+
+        <!-- Footer Section -->
+        @include('layouts.footer')
+
+        @endsection
 
 
-<!-- Footer Section -->
-@include('layouts.footer')
+        <style>
+            .mission-box p,
+            .vision-box p,
+            .mission-box h2,
+            .vision-box h2 {
+                color: #f8f9fa !important;
+                /* Use a lighter shade */
+            }
 
-@endsection
+            body {
+                background-color: rgb(46, 33, 33);
+                color: #fff;
+                font-family: 'Orbitron', sans-serif;
+                text-align: center;
+                padding: 50px;
+            }
 
+            .mission-vision {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+                max-width: 1000px;
+                margin: auto;
+            }
 
-<style>
-    .mission-box p,
-    .vision-box p,
-    .mission-box h2,
-    .vision-box h2 {
-        color: #f8f9fa !important;
-        /* Use a lighter shade */
-    }
+            .mv_container {
+                background: rgb(0, 0, 0);
+                opacity: 0.7;
+                backdrop-filter: blur(10px);
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgb(255, 254, 171);
+                transition: transform 0.3s;
+                text-align: left;
+            }
 
-    body {
-        background-color: rgb(46, 33, 33);
-        color: #fff;
-        font-family: 'Orbitron', sans-serif;
-        text-align: center;
-        padding: 50px;
-    }
-
-    .mission-vision {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-        max-width: 1000px;
-        margin: auto;
-    }
-
-    .mv_container {
-        background: rgb(0, 0, 0);
-        opacity: 0.7;
-        backdrop-filter: blur(10px);
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgb(255, 254, 171);
-        transition: transform 0.3s;
-        text-align: left;
-    }
-
-    /* .mv_container:hover {
+            /* .mv_container:hover {
         transform: scale(1.05);
     } */
 
-    .text {
-        font-size: 1.2rem;
-        line-height: 1.6;
-        color: #bbb;
-    }
+            .text {
+                font-size: 1.2rem;
+                line-height: 1.6;
+                color: #bbb;
+            }
 
 
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
-        }
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
 
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
 
-    .hover-scale:hover {
-        transform: scale(1.1);
-        transition: transform 0.3s ease-in-out;
-    }
+            .hover-scale:hover {
+                transform: scale(1.1);
+                transition: transform 0.3s ease-in-out;
+            }
 
-    /* //propose button hover effect */
+            /* //propose button hover effect */
 
-    /* Button Hover Effect */
+            /* Button Hover Effect */
 
-    /* Animation Keyframes */
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
-        }
+            /* Animation Keyframes */
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
 
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
 
-    @keyframes fadeInRight {
-        from {
-            opacity: 0;
-            transform: translateX(-20px);
-        }
+            @keyframes fadeInRight {
+                from {
+                    opacity: 0;
+                    transform: translateX(-20px);
+                }
 
-        to {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-</style>
-
-
+                to {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+        </style>
 
 
 
-<script>
-    AOS.init({
-        duration: 1000, // Animation duration (1 second)
-        once: true // Ensures animations run only once
-    });
 
 
-    $(document).ready(function() {
-        $(window).on("scroll", function() {
-            let scrollTop = $(window).scrollTop();
-            let fadeStart = 100; // Start fading in at 100px
-            let fadeEnd = 600; // Fully visible at 600px
-            let opacity = 1 - (scrollTop - fadeStart) / (fadeEnd - fadeStart);
-            let blurValue = (scrollTop / fadeEnd) * 10; // Increase blur effect
+        <script>
+            AOS.init({
+                duration: 1000, // Animation duration (1 second)
+                once: true // Ensures animations run only once
+            });
 
-            if (opacity < 0) opacity = 0;
-            if (opacity > 1) opacity = 1;
-            if (blurValue > 10) blurValue = 10; // Limit blur intensity
-        });
-    });
-</script>
+
+            $(document).ready(function() {
+                $(window).on("scroll", function() {
+                    let scrollTop = $(window).scrollTop();
+                    let fadeStart = 100; // Start fading in at 100px
+                    let fadeEnd = 600; // Fully visible at 600px
+                    let opacity = 1 - (scrollTop - fadeStart) / (fadeEnd - fadeStart);
+                    let blurValue = (scrollTop / fadeEnd) * 10; // Increase blur effect
+
+                    if (opacity < 0) opacity = 0;
+                    if (opacity > 1) opacity = 1;
+                    if (blurValue > 10) blurValue = 10; // Limit blur intensity
+                });
+            });
+        </script>

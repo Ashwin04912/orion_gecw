@@ -1,7 +1,9 @@
 @include('layouts.admin_navigation')
 
-<!-- Include DataTables CSS -->
-
+<!-- Include DataTables Dark Theme CSS -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-dark.min.css">
+<link rel="stylesheet" href="https://cdn.materialdesignicons.com/6.4.95/css/materialdesignicons.min.css">
 
 @php
     function limitWords($text, $limit = 10)
@@ -17,7 +19,7 @@
 
 <div class="container-fluid p-5" style="width: 85%; position: relative;">
     <div class="button-container pb-5">
-        <a href="{{ route('gallery.create') }}" class="btn btn-primary">Add New</a>
+        <a href="{{ route('gallery.create') }}" class="btn btn-primary" style="background-color: brown;">Add New</a>
     </div>
 
     @if (session()->has('success'))
@@ -26,7 +28,7 @@
         </div>
     @endif
 
-    <table id="galleryTable" class="display">
+    <table id="galleryTable" class="table table-striped table-dark display" style="color: white;">
         <thead>
             <tr>
                 <th>Image</th>
@@ -68,7 +70,8 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
 <!-- Include DataTables JavaScript -->
-<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
 
 <script>
     $(document).ready(function() {
@@ -77,6 +80,45 @@
 </script>
 
 <style>
+    body {
+        background-color: #121212;
+        color: #fff;
+    }
+
+    .dataTables_wrapper .dataTables_filter input,
+    .dataTables_wrapper .dataTables_length select {
+        background-color: #2a2a2a;
+        color: #fff;
+        border: 1px solid #555;
+    }
+
+    .dataTables_wrapper .dataTables_paginate .paginate_button {
+        color: #fff !important;
+        background-color: #2a2a2a !important;
+        border: 1px solid #444;
+        margin: 0 2px;
+    }
+
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+    .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+        background-color: #444 !important;
+        color: #fff !important;
+    }
+
+    table.dataTable thead {
+        background-color: #1f1f1f;
+    }
+
+    table.dataTable tbody tr:hover {
+        background-color: #2e2e2e;
+    }
+
+    .alert-success {
+        background-color: #1e3d1e;
+        color: #adf7ad;
+        border: 1px solid #37a837;
+    }
+
     .button-container {
         position: relative;
         z-index: 1000;

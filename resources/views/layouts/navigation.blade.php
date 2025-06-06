@@ -48,7 +48,7 @@
 <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
     <div class="container-fluid ScrollCss" id="ScrollJq">
         <a class="navbar-brand d-flex align-items-center" href="{{ route('home') }}">
-            <img src="{{ asset('assets/images/logo.jpeg') }}" alt="Logo" width="50" height="50"
+            <img src="{{ asset('assets/images/logo.png') }}" alt="Logo" width="50" height="50"
                 class="d-inline-block align-text-top">
             <span class="ms-2 d-none d-md-inline heading">orion</span> 
         </a>

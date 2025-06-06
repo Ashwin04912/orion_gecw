@@ -76,8 +76,7 @@
         }
 
         @font-face {
-            font-family: 'Nerd-font';
-            src: url('/assets/fonts/JetBrainsMono-Regular.ttf') format('truetype');
+            font-family: 'popins';
             font-weight: normal;
             font-style: normal;
         }

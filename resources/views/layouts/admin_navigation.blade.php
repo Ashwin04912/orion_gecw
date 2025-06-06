@@ -55,9 +55,9 @@
                 </span>
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel" style="background-color: transparent">
+                aria-labelledby="offcanvasNavbarLabel" style="background-color: black">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">IEEE SB GECW</h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">orion gecw</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
                         style="background-color: red"></button>
                 </div>
@@ -72,21 +72,6 @@
                                 Us</a>
                         </li> -->
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Societies
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item {{ Route::currentRouteName() == 'computerexecom.list' ? 'selected' : '' }}"
-                                        href="{{ route('computerexecom.list') }}">Computer Society</a></li>
-                                <li><a class="dropdown-item" href="{{ route('wieexecom.list') }}">Women In Engineering</a></li>
-                                <li><a class="dropdown-item" href="{{ route('apsexecom.list') }}">Antennas and Propagation Society</a></li>
-                                <li><a class="dropdown-item" href="{{ route('mttsexecom.list') }}">Microwave Theory and Technology
-                                        Society</a></li>
-                                <li><a class="dropdown-item" href="{{ route('sightexecom.list') }}">Sight</a></li>
-                            </ul>
-                        </li>
                         <li class="nav-item {{ Route::currentRouteName() == 'events.list' ? 'selected' : '' }}">
                             <a class="nav-link text-light" href="{{ route('events.list') }}">Events</a>
                         </li>

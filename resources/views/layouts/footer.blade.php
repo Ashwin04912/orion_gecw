@@ -6,7 +6,7 @@
                 <h4 class="text-uppercase fs-5 fs-md-4 fw-bold">
                     <i class="bi bi-info-circle-fill me-2"></i>About Us
                 </h4>
-                <p class="fs-6 fs-md-5 text-light"
+                <p class="fs-sm-6 fs-md-5 fs-lg-4 mb-4 text-light"
                     style="font-weight: 400; line-height: 1.6; letter-spacing: 0.8px; margin: 0;">
                     The purpose of ORION GECW is to foster interest, knowledge, and participation in
                     space exploration and related fields among the students of Government Engineering
@@ -71,12 +71,12 @@
 
 <style>
     footer {
-        font-size: 12px;
+        font-size: 1.0rem;
         line-height: 1.8;
     }
 
     footer h4 {
-        font-size: 18px;
+        font-size: 1.1rem;
     }
 
     footer .bi {
