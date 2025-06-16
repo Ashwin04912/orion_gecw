@@ -11,9 +11,9 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-# IEEE SB GECW Website
+# Orion GECW Website
 
-This is the website of IEEE SB GECW, built using Laravel. It serves as a hub for members to stay updated with events, announcements, and resources.
+This is the website of Orion, space club of GECW, built using Laravel. It serves as a hub for members to stay updated with events, announcements, and resources.
 
 ## 🚀 Getting Started
 
@@ -21,5 +21,7 @@ Follow these steps to set up the project locally:
 
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/your-repo/ieee-sb-gecw.git
-cd ieee-sb-gecw
+git clone https://github.com/your-repo/orion_gecw.git
+cd orion_gecw
+
+--- 
